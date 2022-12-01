@@ -1,0 +1,177 @@
+(kicad_sch (version 20211123) (generator eeschema)
+
+  (uuid e63e39d7-6ac0-4ffd-8aa3-1841a4541b55)
+
+  (paper "A3")
+
+  (title_block
+    (title "Upgraded carvey")
+    (date "2022-11-30")
+  )
+
+  (lib_symbols
+  )
+
+
+  (text "This are the schematics of an upgraded Carvey. The design consists of 2 subsheets. One\ncontains a Raspberry Pi 4 with Linux CNC installed on it and an STM32 based dev board.\nThis is the electro heart of the machine. The other subsheet contains all terminal and\nhardware that is in the CNC. The two systems are connected with 9 pin D-subs."
+    (at 31.75 67.31 0)
+    (effects (font (size 2.54 2.54)) (justify left bottom))
+    (uuid 45047bb9-87a7-4ccc-955e-f309ddb6bb4f)
+  )
+
+  (sheet (at 237.49 114.3) (size 35.56 30.48) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid 41dd8dbe-60e2-416e-bb81-b16a7ee0f28c)
+    (property "Sheet name" "Machine_control" (id 0) (at 237.49 113.5884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "machine_control.kicad_sch" (id 1) (at 237.49 145.3646 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet (at 237.49 54.61) (size 35.56 30.48) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid 76a87642-211c-44f2-a488-190d6dc3728e)
+    (property "Sheet name" "Electro_box" (id 0) (at 237.49 53.8984 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "electro_box.kicad_sch" (id 1) (at 237.49 85.6746 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+    (path "/76a87642-211c-44f2-a488-190d6dc3728e" (page "2"))
+    (path "/41dd8dbe-60e2-416e-bb81-b16a7ee0f28c" (page "3"))
+  )
+
+  (symbol_instances
+    (path "/41dd8dbe-60e2-416e-bb81-b16a7ee0f28c/0b9a31b3-71f3-4157-9a7a-513a6a4871fe"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/41dd8dbe-60e2-416e-bb81-b16a7ee0f28c/2a25c693-d9a0-4f5f-ae41-84c8d67f9e6c"
+      (reference "#PWR?") (unit 1) (value "+24V") (footprint "")
+    )
+    (path "/76a87642-211c-44f2-a488-190d6dc3728e/467f6aa2-35b4-45e1-b7f8-f7174f514c27"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/41dd8dbe-60e2-416e-bb81-b16a7ee0f28c/61a46a8b-a1d4-47f7-9c09-f4eccdae6aad"
+      (reference "#PWR?") (unit 1) (value "+24V") (footprint "")
+    )
+    (path "/41dd8dbe-60e2-416e-bb81-b16a7ee0f28c/6398af37-19f8-4769-a00f-fa5baf3c6ea5"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/41dd8dbe-60e2-416e-bb81-b16a7ee0f28c/82842941-cab1-4e16-b58e-3a332ad06849"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/41dd8dbe-60e2-416e-bb81-b16a7ee0f28c/85c22c96-8aa9-4729-b651-96556c3913e3"
+      (reference "#PWR?") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/41dd8dbe-60e2-416e-bb81-b16a7ee0f28c/900b75d5-7b9b-4f6c-a96f-26bfdef112c2"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/41dd8dbe-60e2-416e-bb81-b16a7ee0f28c/9b7a5751-8612-414b-9061-ecaf6ceb8719"
+      (reference "#PWR?") (unit 1) (value "+24V") (footprint "")
+    )
+    (path "/76a87642-211c-44f2-a488-190d6dc3728e/9db50dc0-d290-4b77-95e6-5b3b05b087a3"
+      (reference "#PWR?") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/76a87642-211c-44f2-a488-190d6dc3728e/9e231b25-58b4-42ae-bec8-bd5bce749676"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/41dd8dbe-60e2-416e-bb81-b16a7ee0f28c/a17f60e7-a19a-4917-a542-50de05e641ff"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/76a87642-211c-44f2-a488-190d6dc3728e/b3b3daac-b59d-40fe-962a-64e2d8eeda53"
+      (reference "#PWR?") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/41dd8dbe-60e2-416e-bb81-b16a7ee0f28c/ce8e1991-6467-42a3-be20-d6571f0ed619"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/41dd8dbe-60e2-416e-bb81-b16a7ee0f28c/1eb033e9-bf05-4256-8066-3c9cdb3e5c1c"
+      (reference "J1_X_AXIS_DSUB_PLUG") (unit 1) (value "DE9_S") (footprint "")
+    )
+    (path "/76a87642-211c-44f2-a488-190d6dc3728e/6d402624-3e0d-47f2-a5d0-10fa38572b36"
+      (reference "J1_X_AXIS_DSUB_SOCKET") (unit 1) (value "DE9_S") (footprint "")
+    )
+    (path "/41dd8dbe-60e2-416e-bb81-b16a7ee0f28c/c425c49b-8aa3-498d-9378-e82b2b671516"
+      (reference "J2_Y_AXIS_DSUB_PLUG") (unit 1) (value "DE9_S") (footprint "")
+    )
+    (path "/76a87642-211c-44f2-a488-190d6dc3728e/e76702bd-72d5-4ce2-a21f-ae99f2cb667d"
+      (reference "J2_Y_AXIS_DSUB_SOCKET") (unit 1) (value "DE9_S") (footprint "")
+    )
+    (path "/76a87642-211c-44f2-a488-190d6dc3728e/5cc64dbe-3fc1-469e-8c18-df66923e0964"
+      (reference "J3_Z_AXIS_DSUB_SOCKET") (unit 1) (value "DE9_S") (footprint "")
+    )
+    (path "/41dd8dbe-60e2-416e-bb81-b16a7ee0f28c/d9071849-11f4-4725-8f0a-65c3d9e7af6c"
+      (reference "J3_Z_AXIS_DSUB_SOCKET") (unit 1) (value "DE9_S") (footprint "")
+    )
+    (path "/41dd8dbe-60e2-416e-bb81-b16a7ee0f28c/fd9f77a8-8361-4bfa-a897-cb8f928af5f3"
+      (reference "J4_POS_LIMIT_DSUB_PLUG") (unit 1) (value "DE9_S") (footprint "")
+    )
+    (path "/76a87642-211c-44f2-a488-190d6dc3728e/d6b13807-d14b-4164-a6d4-4371ecc9c907"
+      (reference "J4_POS_LIMIT_DSUB_SOCKET") (unit 1) (value "DE9_S") (footprint "")
+    )
+    (path "/41dd8dbe-60e2-416e-bb81-b16a7ee0f28c/a8d38f85-0c0d-432e-9e49-8bb4c577e2ba"
+      (reference "J5_IO_DSUB_PLUG") (unit 1) (value "DE9_S") (footprint "")
+    )
+    (path "/76a87642-211c-44f2-a488-190d6dc3728e/1f064dc4-93fa-4a15-bda4-98eff749e8fc"
+      (reference "J5_IO_DSUB_SOCKET") (unit 1) (value "DE9_S") (footprint "")
+    )
+    (path "/41dd8dbe-60e2-416e-bb81-b16a7ee0f28c/02f0b4e5-6ceb-492f-b747-962c1f195936"
+      (reference "J6_SPINDLE_DSUB_PLUG") (unit 1) (value "DE9_S") (footprint "")
+    )
+    (path "/76a87642-211c-44f2-a488-190d6dc3728e/4f941978-f67f-493e-9c88-c3c28e312543"
+      (reference "J?") (unit 1) (value "DIN_Terminal_10") (footprint "NA")
+    )
+    (path "/76a87642-211c-44f2-a488-190d6dc3728e/5645a810-f5b5-4505-8237-12d023578bab"
+      (reference "J?") (unit 1) (value "DIN_Terminal_10") (footprint "NA")
+    )
+    (path "/76a87642-211c-44f2-a488-190d6dc3728e/6032e0e0-e111-4c8f-bdbb-7a88bdea5bdd"
+      (reference "J?") (unit 1) (value "DIN_Terminal_5") (footprint "NA")
+    )
+    (path "/76a87642-211c-44f2-a488-190d6dc3728e/7e5ab859-a0cc-4dd3-8b63-52cffdff0832"
+      (reference "J?") (unit 1) (value "DIN_Terminal_10") (footprint "NA")
+    )
+    (path "/76a87642-211c-44f2-a488-190d6dc3728e/d0facb29-4faf-4b03-b2ea-7fc9ec96aba8"
+      (reference "J?") (unit 1) (value "DIN_Terminal_10") (footprint "NA")
+    )
+    (path "/76a87642-211c-44f2-a488-190d6dc3728e/57e7603b-4637-4a80-81c2-d78a3e4ebe3e"
+      (reference "J?_MAINS_POWER_SOCKET?") (unit 1) (value "GENERIC_-_Conn_01x03_Male") (footprint "")
+    )
+    (path "/41dd8dbe-60e2-416e-bb81-b16a7ee0f28c/fbb97a3b-40ce-4c09-926e-2e901def0221"
+      (reference "MOMENTARY_SW") (unit 1) (value "SW_Push_LED") (footprint "")
+    )
+    (path "/41dd8dbe-60e2-416e-bb81-b16a7ee0f28c/aad2ea17-21b5-4ebf-8b18-dfe0f3213e82"
+      (reference "SPINDLE") (unit 1) (value "Motor_DC") (footprint "")
+    )
+    (path "/41dd8dbe-60e2-416e-bb81-b16a7ee0f28c/cd85e52f-1468-4529-830a-9949ca8e73e1"
+      (reference "SPINDLE_LED") (unit 1) (value "LED_MODULE_24V") (footprint "")
+    )
+    (path "/76a87642-211c-44f2-a488-190d6dc3728e/d6b0f946-f92e-4aaa-9e4c-a29f3fd66ff7"
+      (reference "SW1_KEYED_MAIN_SWITCH?") (unit 1) (value "SW_DPST") (footprint "")
+    )
+    (path "/41dd8dbe-60e2-416e-bb81-b16a7ee0f28c/0edef41d-0d73-4adf-8257-f364e3a9253f"
+      (reference "SW?_LID?") (unit 1) (value "SW_Reed") (footprint "")
+    )
+    (path "/76a87642-211c-44f2-a488-190d6dc3728e/f8279a6e-65d3-4912-8230-d2becd35c380"
+      (reference "U1") (unit 1) (value "NUCLEO144-F746ZG") (footprint "Module:ST_Morpho_Connector_144_STLink")
+    )
+    (path "/41dd8dbe-60e2-416e-bb81-b16a7ee0f28c/14d00cea-9263-4622-ab92-3bdccf1f1260"
+      (reference "WORK_AREA_LED") (unit 1) (value "LED_MODULE_24V") (footprint "")
+    )
+    (path "/41dd8dbe-60e2-416e-bb81-b16a7ee0f28c/05a591a0-b196-40b0-b522-74d9d3512377"
+      (reference "X_POS_LIMIT_SW") (unit 1) (value "LJ12A3-4-Z/BX") (footprint "")
+    )
+    (path "/41dd8dbe-60e2-416e-bb81-b16a7ee0f28c/f9359a1e-a6af-4b75-ad76-ac97b4f9b87f"
+      (reference "Y_POS_LIMIT_SW") (unit 1) (value "LJ12A3-4-Z/BX") (footprint "")
+    )
+    (path "/41dd8dbe-60e2-416e-bb81-b16a7ee0f28c/9a947424-2e4d-4625-9085-7aba7dc2fa52"
+      (reference "Z_POS_LIMIT_SW") (unit 1) (value "CARVEY_PROPRIETARY") (footprint "")
+    )
+  )
+)
